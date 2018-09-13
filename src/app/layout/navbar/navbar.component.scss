@@ -1,0 +1,43 @@
+.nav-content__sh {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    background: #1ac17d;
+
+    .nav-title__sh {
+        margin-right: 16px;
+        cursor: default;
+    }
+}
+
+.nav-menu__sh {
+    .menu-item__sh {
+        position: relative;
+        display: inline;
+        padding: 8px;
+        &:not(:last-child) {
+            margin-right: 8px;
+        }
+
+        .menu-link__sh {
+            color: white;
+            font-size: 22px;
+            cursor: pointer;
+        }
+
+        &::after {
+            content: '';
+            height: 2px;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 0;
+            background: white;
+            transition: .3s;
+        }
+        &:hover::after {
+            width: 100%;
+            transition: .3s;
+        }
+    }
+}
