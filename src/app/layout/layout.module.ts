@@ -13,7 +13,7 @@ import { FooterComponent } from './footer/footer.component';
     imports: [
         BrowserModule,
         CommonModule 
-    ]
+    ],
     exports: [ 
         NavbarComponent,
         FooterComponent
